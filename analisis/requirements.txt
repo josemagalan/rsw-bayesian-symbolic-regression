@@ -1,0 +1,17 @@
+# Direct dependencies. The exact reference environment (Windows, Python 3.14.5) is in
+# requirements-lock-windows.txt; PySR's Julia environment (Julia 1.11.9) is in julia_Manifest.toml.
+numpy>=2.2
+pandas>=2.3
+openpyxl>=3.1
+scipy>=1.15
+scikit-learn>=1.7
+interpret-core>=0.7
+pygam>=0.12
+pysr==2.7.0
+tabpfn>=9.2
+torch>=2.14
+baycomp>=1.0.3
+sympy>=1.13
+matplotlib>=3.8
+# BMS: not a pip package. Run `python analisis/obtener_bms.py` (official code at commit
+# 9defb7aa2a1382b4a8518f3060e8dd87a20acb99, branch no_degeneracy, and its priors).

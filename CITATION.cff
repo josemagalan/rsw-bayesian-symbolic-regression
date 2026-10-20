@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below (the paper reference will be added on publication)."
+title: "Bayesian symbolic regression of resistance spot weld strength: analysis code"
+type: software
+license: MIT
+repository-code: "https://github.com/josemagalan/rsw-bayesian-symbolic-regression"
+url: "https://github.com/josemagalan/rsw-bayesian-symbolic-regression"
+version: "0.1.0"
+date-released: "2026-10-20"
+authors:
+  - family-names: "Galán"
+    given-names: "José Manuel"
+    affiliation: "Universidad de Burgos"
+references:
+  - type: article
+    title: "A Bayesian machine scientist to aid in the solution of challenging scientific problems"
+    authors:
+      - family-names: "Guimerà"
+        given-names: "Roger"
+      - family-names: "Reichardt"
+        given-names: "Ignasi"
+      - family-names: "Aguilar-Mogas"
+        given-names: "Antoni"
+      - family-names: "Massucci"
+        given-names: "Francesco A."
+      - family-names: "Miranda"
+        given-names: "Manuel"
+      - family-names: "Pallarès"
+        given-names: "Jordi"
+      - family-names: "Sales-Pardo"
+        given-names: "Marta"
+    journal: "Science Advances"
+    volume: 6
+    issue: 5
+    start: "eaav6971"
+    year: 2020
+    doi: "10.1126/sciadv.aav6971"
