@@ -81,7 +81,12 @@ def main():
     if not (VENDOR/'.git').exists():
         VENDOR.parent.mkdir(parents=True, exist_ok=True)
         subprocess.run(['git', 'clone', '--no-checkout', URL, str(VENDOR)], check=True)
+    if not (VENDOR/'.git'/'index').exists():   # first run, or a previous checkout that failed
         git('config', 'core.sparseCheckout', 'true')
+        # Windows: the excluded Prior/*.dat names contain ':'. They are never written to disk
+        # (sparse checkout), but Git for Windows refuses to read them into the index unless
+        # core.protectNTFS is off for this clone only.
+        git('config', 'core.protectNTFS', 'false')
         (VENDOR/'.git'/'info').mkdir(parents=True, exist_ok=True)
         (VENDOR/'.git'/'info'/'sparse-checkout').write_text('/*\n!/Prior/*.dat\n', encoding='ascii')
         git('checkout', '--detach', COMMIT)
