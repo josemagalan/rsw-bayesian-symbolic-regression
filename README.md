@@ -97,7 +97,7 @@ E-017: run `ataque1`–`ataque4` and then `figura.py`.
 | Fig. 6 (expressions and motifs) | `C-012` → `Fig4_modelos_A.pdf` + `Fig5_motivos_prior.pdf` |
 | Fig. 7 (partial effects) | `E-020` → `Fig7_efectos_parciales.pdf` |
 | Fig. 8 (acceptance boundary) | `E-018_revision_frontera/figura.py` → `Fig_frontera_v2.pdf` |
-| Fig. 9 (extrapolation) | `C-012` → `Fig6_extrapolacion.pdf` |
+| Fig. 9 (extrapolation) | `articulo/rehacer_fig09_extrapolacion.py` (reads the E-013 output) → `Fig09_extrapolation_v2.pdf`; supersedes `C-012` → `Fig6_extrapolacion.pdf` |
 | Fig. S1 (synthetic recovery) | `E-020` → `FigS1_sintetico.pdf` |
 | Fig. S2 (chain traces) | `C-012` → `FigS1_cadenas.pdf` |
 | Fig. S3 (residual diagnostics) | `C-012` → `FigS2_residuos_A.pdf` |
