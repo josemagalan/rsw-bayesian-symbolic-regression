@@ -16,8 +16,9 @@ under one grouped cross-validation protocol.
 
 | Included | Not included |
 |---|---|
-| All analysis scripts, confirmatory (`C-…`) and exploratory (`E-…`) | Experimental data (see [`Dataset/README.md`](Dataset/README.md)) |
-| Frozen cross-validation partitions (`analisis/datos_derivados/`: joint ids and folds only, no responses) | Result files (archived separately; see the paper) |
+| All analysis scripts, confirmatory (`C-…`) and exploratory (`E-…`) | Result files (archived separately; see the paper) |
+| Experimental data, original file (see [`Dataset/README.md`](Dataset/README.md)) | |
+| Frozen cross-validation partitions (`analisis/datos_derivados/`: joint ids and folds only, no responses) | |
 | Frozen analysis protocol (`00_gestion/`, in Spanish) | BMS source code and priors (fetched by `analisis/obtener_bms.py`) |
 | Locked environment (pip lock, Julia manifest) | Fig. 4 (hand-designed workflow schematic) and Figs. 1–2 (photographs) |
 
@@ -55,7 +56,7 @@ python analisis/verificar_entorno.py   # quick check of GAM, PySR, TabPFN and ba
 - TabPFN downloads the v2 model weights on first use; depending on the TabPFN version this may require
   accepting the model licence on Hugging Face.
 - Figure assembly (`articulo/componer_figuras*.py`) needs `pdflatex` and `pdftoppm`.
-- Then copy the data file into `Dataset/` (see [`Dataset/README.md`](Dataset/README.md)).
+- The data file is already in `Dataset/` (see [`Dataset/README.md`](Dataset/README.md)).
 
 ## Running
 
@@ -128,6 +129,13 @@ The scripts are copied unchanged from the project's working repository, except:
 ## Licence and citation
 
 Code: MIT licence (see [`LICENSE`](LICENSE)). The BMS is © its authors and is not redistributed here.
+
+Data: the experimental data have been submitted to UVaDOC, the repository of the University of Valladolid,
+and are awaiting the assignment of a DOI. The data are not covered by the MIT licence. If you use them, please cite
+the dataset: Martín, Ó., & de Tiedra, P. (2026). *RSW-AISI304: a dataset of 242 resistance spot welds with
+tensile-shear strength measurements* (Version 1) [Data set]. Universidad de Valladolid. DOI pending
+(see [`Dataset/README.md`](Dataset/README.md)).
+
 If you use this code, please cite the paper (see [`CITATION.cff`](CITATION.cff)) and Guimerà, R. et al. (2020).
 A Bayesian machine scientist to aid in the solution of challenging scientific problems. *Science Advances*
 6(5), eaav6971. https://doi.org/10.1126/sciadv.aav6971
